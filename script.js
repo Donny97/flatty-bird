@@ -75,12 +75,9 @@ $(function () {
                 
                 
                 var new_height = parseInt(Math.random() * 100);
-                
-                
+                              
                 pole_3.css('height', pillar_initial_height + new_height);
                 pole_4.css('height', pillar_initial_height - new_height);
-
-
                 pillar_current_position = pole_initial_position;
             }
 
@@ -124,7 +121,6 @@ $(function () {
         if(game_pause === false && game_over === false)
         {
             bird.css('top', parseInt(bird.css('top')) - 10);
-    
         }
     }
 
@@ -138,14 +134,12 @@ $(function () {
     pause_btn.click(function () {
         if(game_pause === false){
         game_pause = true;
-        
         }
        else{
             game_pause = false;
            
        }
     });
-
 
     restart_btn.click(function () {
         location.reload();
